@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Engineering College</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo" alt="Logo">
+        <h1>Welcome to UNIVERSITY Engineering College</h1>
+        <br>
+        <a href="{{ url_for('student_login') }}">Student Login</a> |
+        <a href="{{ url_for('admin_login') }}">Admin Panel</a>
+    </div>
+</body>
+</html>

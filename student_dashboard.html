@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ student.name }}</h2>
+        <p><strong>Roll Number:</strong> {{ student.rollno }}</p>
+        <h3>Results:</h3>
+        <ul>
+            {% for sem, mark in student.results.items() %}
+                <li>{{ sem }}: {{ mark }}</li>
+            {% endfor %}
+        </ul>
+        <h3>Total CGPA: {{ student.cgpa }}</h3>
+        <br>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>

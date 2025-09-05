@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('../images/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+.container {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 30px;
+    margin: 100px auto;
+    text-align: center;
+    width: 60%;
+    border-radius: 10px;
+}
+h1, h2 {
+    color: white;
+}
+.logo {
+    width: 100px;
+}
+a {
+    color: yellow;
+    text-decoration: none;
+    margin: 0 10px;
+}

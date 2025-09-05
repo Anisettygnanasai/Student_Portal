@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        form input { width: 80%; padding: 8px; margin-bottom: 10px; }
+        form button { padding: 10px 20px; background-color: #28a745; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Student Details</h2>
+        <form method="POST">
+            <input type="text" name="rollno" placeholder="Roll Number" value="{{ student.rollno }}" required><br>
+            <input type="text" name="name" placeholder="Full Name" value="{{ student.name }}" required><br>
+            <input type="password" name="password" placeholder="New Password (leave blank to keep old one)" value="{{ student.password }}" required><br>
+            <input type="text" name="results" placeholder="Results (e.g., sem1:8.5,sem2:9.0)" value="{{ student.results_str }}" required><br>
+            <input type="text" name="cgpa" placeholder="Overall CGPA" value="{{ student.cgpa }}" required><br>
+            <button type="submit">Update Details</button>
+        </form>
+        <br>
+        <a href="{{ url_for('admin_dashboard') }}">Back to Dashboard</a>
+    </div>
+</body>
+</html>
