@@ -80,11 +80,7 @@ python app.py
 The application will be running at http://127.0.0.1:5000. 🎉
 
 🧑‍💻 How to Use
-Admin Access: Navigate to /admin/login. The default credentials are:
-
-Username: admin
-
-Password: admin123
+Admin Access: Navigate to /admin/login. 
 
 Student Access: An admin must first add a student via the admin dashboard. Once added, the student can log in at /student/login using the Roll Number and Password set by the admin.
 
